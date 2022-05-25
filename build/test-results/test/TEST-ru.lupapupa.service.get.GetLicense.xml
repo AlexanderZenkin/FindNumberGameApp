@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.lupapupa.service.get.GetLicense" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-25T05:25:59" hostname="AZENKIN-NB" time="1.511">
+  <properties/>
+  <testcase name="getLicense()" classname="ru.lupapupa.service.get.GetLicense" time="1.511"/>
+  <system-out><![CDATA[Request method:	GET
+Request URI:	http://192.168.2.100:8080/v1/organization/d898a142-de44-466c-8c88-9ceb2c2429d3/license/f2a9c9d4-d2c0-44fa-97fe-724d77173c62
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 24 May 2022 21:00:08 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 38,
+    "licenseId": "f2a9c9d4-d2c0-44fa-97fe-724d77173c62",
+    "description": "Software product",
+    "organizationId": "d898a142-de44-466c-8c88-9ceb2c2429d3",
+    "productName": "Ostock",
+    "licenseType": "full",
+    "_links": {
+        "self": {
+            "href": "http://192.168.2.100:8080/v1/organization/d898a142-de44-466c-8c88-9ceb2c2429d3/license/f2a9c9d4-d2c0-44fa-97fe-724d77173c62"
+        },
+        "createLicense": {
+            "href": "http://192.168.2.100:8080/v1/organization/d898a142-de44-466c-8c88-9ceb2c2429d3/license"
+        },
+        "updateLicense": {
+            "href": "http://192.168.2.100:8080/v1/organization/d898a142-de44-466c-8c88-9ceb2c2429d3/license"
+        },
+        "deleteLicense": {
+            "href": "http://192.168.2.100:8080/v1/organization/d898a142-de44-466c-8c88-9ceb2c2429d3/license/f2a9c9d4-d2c0-44fa-97fe-724d77173c62"
+        }
+    }
+}
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>

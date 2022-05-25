@@ -1,0 +1,10 @@
+ru/lupapupa/model/License.java
+ ru.lupapupa.model.License
+ru/lupapupa/config/AppConfig.java
+ ru.lupapupa.config.AppConfig
+ru/lupapupa/service/post/CreateLicense.java
+ ru.lupapupa.service.post.CreateLicense
+ru/lupapupa/baseclass/BaseClass.java
+ ru.lupapupa.baseclass.BaseClass
+ru/lupapupa/service/get/GetLicense.java
+ ru.lupapupa.service.get.GetLicense
