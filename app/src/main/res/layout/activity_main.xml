@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_853433"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Игра угадай число"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/lblOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGuess"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Испытай удачу, нажми кнопку"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <Button
+            android:id="@+id/btnGuess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtGuess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:shadowColor="@color/black"
+            android:text="Проверить число!" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:lines="3"
+            android:text="Введите число от 1 до 100"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <EditText
+            android:id="@+id/txtGuess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"
+            android:width="75dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:linksClickable="false"
+            android:numeric="integer" />
+
+        <TextView
+            android:id="@+id/lblOutputResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGuess"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:gravity="center_horizontal"
+            android:text="Лучший результат:"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/lblOutputResultWin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGuess"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="130dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <TextView
+            android:id="@+id/lblOutputResultLos"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGuess"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="130dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+    </RelativeLayout>
+</LinearLayout>
